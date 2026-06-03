@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | NeverMiss - Alarms & Alerts</title>
+    <meta name="description" content="Official Privacy Policy for NeverMiss - Alarms & Alerts. We respect your privacy: zero data collection, 100% local device storage.">
+    
+    <!-- OpenGraph Metadata for Rich Social Links -->
+    <meta property="og:title" content="Privacy Policy | NeverMiss - Alarms & Alerts">
+    <meta property="og:description" content="Official Privacy Policy for NeverMiss - Alarms & Alerts. We respect your privacy: zero data collection, 100% local device storage.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #FFF0F5 0%, #FADADD 50%, #E6E6FA 100%);
+            --glass-bg: rgba(255, 255, 255, 0.65);
+            --glass-border: rgba(255, 255, 255, 0.6);
+            --text-primary: #2C2C2C;
+            --text-secondary: #5A5A5A;
+            --rose-accent: #E89EAE;
+            --rose-hover: #D7889A;
+            --card-shadow: 0 16px 32px 0 rgba(232, 158, 174, 0.15);
+            --radius-outer: 24px;
+            --radius-inner: 16px;
+        }
+
+        /* Reset & Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Glassmorphic Container */
+        .container {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-outer);
+            box-shadow: var(--card-shadow);
+            max-width: 800px;
+            width: 100%;
+            padding: 50px 40px;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Aesthetic Ambient Orbs */
+        .container::before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255,228,225,0.4) 0%, rgba(250,218,221,0) 70%);
+            top: -150px;
+            right: -100px;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(232, 158, 174, 0.15);
+            padding-bottom: 30px;
+        }
+
+        .logo-placeholder {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #FFB7B2, #E89EAE);
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            box-shadow: 0 8px 16px rgba(232, 158, 174, 0.3);
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: var(--rose-accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Section Layouts */
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #3A3A3A;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 20px;
+            background: var(--rose-accent);
+            border-radius: 3px;
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        /* Lists */
+        ul {
+            list-style-type: none;
+            margin-left: 5px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        li::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            color: var(--rose-accent);
+            font-weight: bold;
+        }
+
+        /* Alert/Callout Box */
+        .callout {
+            background: rgba(255, 255, 255, 0.45);
+            border-left: 4px solid var(--rose-accent);
+            border-radius: 0 var(--radius-inner) var(--radius-inner) 0;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .callout p {
+            margin: 0;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        /* Permissions Grid */
+        .permission-card {
+            background: rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: var(--radius-inner);
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+        }
+
+        .permission-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(232, 158, 174, 0.08);
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        .permission-title {
+            font-weight: 600;
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+            font-size: 1.08rem;
+        }
+
+        /* Contact Details */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: var(--radius-inner);
+            padding: 18px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            background: rgba(255, 255, 255, 0.7);
+            border-color: var(--rose-accent);
+        }
+
+        .contact-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--rose-accent);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .contact-value a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+            display: inline-block;
+            word-break: break-all;
+        }
+
+        .contact-value a:hover {
+            color: var(--rose-hover);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: var(--rose-accent);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-placeholder">NM</div>
+            <h1>NeverMiss - Alarms & Alerts</h1>
+            <div class="last-updated">Privacy Policy &bull; Updated June 3, 2026</div>
+        </header>
+
+        <main>
+            <section>
+                <p>This Privacy Policy describes how the <strong>NeverMiss - Alarms & Alerts</strong> mobile application (referred to as "the App", "we", "us", or "our") handles user information. NeverMiss is built to be a beautiful, minimalist, and private alarm, reminder, and bill-tracking app.</p>
+                <p>We take your privacy seriously. Please read this document carefully to understand how your information is managed.</p>
+            </section>
+
+            <section>
+                <h2>1. No Collection of Personal Data</h2>
+                <div class="callout">
+                    <p>NeverMiss is a local-first application. Your private data stays entirely on your phone.</p>
+                </div>
+                <ul>
+                    <li><strong>No Server Storage:</strong> We do not operate external database servers to log or upload your schedules. All habits, alarms, bills, and reminders reside strictly within your device's memory.</li>
+                    <li><strong>No Account Sign-Up:</strong> You are not required to create profiles, enter emails, verify phone numbers, or hook up social network credentials to use the App.</li>
+                    <li><strong>No Trackers or Analytics:</strong> The App does not contain third-party tracking scripts, advertiser tools, or usage-analytics kits. Your app behavior and usage frequencies remain invisible.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>2. Local Device Storage</h2>
+                <p>Any items you input into NeverMiss are saved locally in a sandboxed, private SQL database on your device (implemented via Android's native Room library):</p>
+                <ul>
+                    <li><strong>Alarms:</strong> Time configurations, repeat flags, and sound labels.</li>
+                    <li><strong>Reminders & Tasks:</strong> Schedules, notes, flags, priorities, and check states.</li>
+                    <li><strong>Bills & Budgets:</strong> Transaction names, billing frequencies, and dates.</li>
+                </ul>
+                <p>This database is secure and locked from other apps. Uninstalling the app permanently purges this local database unless backed up using standard system-wide Google Account backups.</p>
+            </section>
+
+            <section>
+                <h2>3. Required Device Permissions</h2>
+                <p>To deliver precise features, NeverMiss requests the following permissions from Android. We only use them to execute features locally on your device:</p>
+
+                <div class="permission-card">
+                    <div class="permission-title">A. Exact Alarm Scheduling</div>
+                    <p>Allows the App to trigger reminders at the exact millisecond configured by the user, overcoming standard background idle sleep delays.</p>
+                </div>
+
+                <div class="permission-card">
+                    <div class="permission-title">B. Full-Screen Intents</div>
+                    <p>Enables displaying the full wakeup call trigger screen even when your device is completely locked, allowing quick snoozes and dismissals.</p>
+                </div>
+
+                <div class="permission-card">
+                    <div class="permission-title">C. Post Notifications</div>
+                    <p>Allows adding alerts, progress status, and task reminder banners to your device’s notification tray.</p>
+                </div>
+
+                <div class="permission-card">
+                    <div class="permission-title">D. Receive Boot Completed</div>
+                    <p>Enables the App to restore and re-schedule all your active alarms and reminders automatically when your phone is turned back on or restarted.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>4. Children's Privacy</h2>
+                <p>Since the App collects absolutely no data, it is fully compliant with the Children's Online Privacy Protection Act (COPPA) and the General Data Protection Regulation (GDPR), and is safe to be used by all age brackets.</p>
+            </section>
+
+            <section>
+                <h2>5. Contact & Support</h2>
+                <p>For support, bugs, or general feedback, feel free to reach out to the developer:</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-label">Email Support</div>
+                        <div class="contact-value">
+                            <a href="mailto:medicobhai@gmail.com">medicobhai@gmail.com</a><br>
+                            <a href="mailto:riturajprince@outlook.com">riturajprince@outlook.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-label">Instagram Contacts</div>
+                        <div class="contact-value">
+                            <a href="https://www.instagram.com/theriturajprince" target="_blank">@theriturajprince</a><br>
+                            <a href="https://www.instagram.com/riturajprinceofficial" target="_blank">@riturajprinceofficial</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2026 NeverMiss. Made with privacy in mind.
+        </footer>
+    </div>
+
+</body>
+</html>
