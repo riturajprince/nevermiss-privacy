@@ -4,18 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | NeverMiss - Alarms & Alerts</title>
-    <meta name="description" content="Official Privacy Policy for NeverMiss - Alarms & Alerts. We respect your privacy: zero data collection, 100% local device storage.">
+    <meta name="description" content="NeverMiss privacy: local schedules and Focus reports, optional Accessibility, website and DNS processing, and backup/export choices.">
     
     <!-- OpenGraph Metadata for Rich Social Links -->
     <meta property="og:title" content="Privacy Policy | NeverMiss - Alarms & Alerts">
-    <meta property="og:description" content="Official Privacy Policy for NeverMiss - Alarms & Alerts. We respect your privacy: zero data collection, 100% local device storage.">
+    <meta property="og:description" content="NeverMiss privacy: local schedules and Focus reports, optional Accessibility, website and DNS processing, and backup/export choices.">
     <meta property="og:type" content="website">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <!-- System fonts keep this policy page free of external font requests. -->
     <style>
         :root {
             --bg-gradient: linear-gradient(135deg, #FFF0F5 0%, #FADADD 50%, #E6E6FA 100%);
@@ -38,7 +34,7 @@
         }
 
         body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
             background: var(--bg-gradient);
             background-attachment: fixed;
             color: var(--text-primary);
@@ -100,11 +96,11 @@
             color: white;
             font-size: 28px;
             font-weight: 700;
-            font-family: 'Outfit', sans-serif;
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
         }
 
         h1 {
-            font-family: 'Outfit', sans-serif;
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
             font-size: 2.2rem;
             font-weight: 700;
             color: var(--text-primary);
@@ -126,7 +122,7 @@
         }
 
         h2 {
-            font-family: 'Outfit', sans-serif;
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
             font-size: 1.4rem;
             font-weight: 600;
             margin-bottom: 15px;
@@ -207,7 +203,7 @@
 
         .permission-title {
             font-weight: 600;
-            font-family: 'Outfit', sans-serif;
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
             color: var(--text-primary);
             margin-bottom: 6px;
             font-size: 1.08rem;
@@ -285,89 +281,19 @@
         <header>
             <div class="logo-placeholder">NM</div>
             <h1>NeverMiss - Alarms & Alerts</h1>
-            <div class="last-updated">Privacy Policy &bull; Updated June 3, 2026</div>
+            <div class="last-updated">Privacy Policy &bull; Updated October 8, 2026 &bull; v2.0 (12)</div>
         </header>
 
         <main>
-            <section>
-                <p>This Privacy Policy describes how the <strong>NeverMiss - Alarms & Alerts</strong> mobile application (referred to as "the App", "we", "us", or "our") handles user information. NeverMiss is built to be a beautiful, minimalist, and private alarm, reminder, and bill-tracking app.</p>
-                <p>We take your privacy seriously. Please read this document carefully to understand how your information is managed.</p>
-            </section>
-
-            <section>
-                <h2>1. No Collection of Personal Data</h2>
-                <div class="callout">
-                    <p>NeverMiss is a local-first application. Your private data stays entirely on your phone.</p>
-                </div>
-                <ul>
-                    <li><strong>No Server Storage:</strong> We do not operate external database servers to log or upload your schedules. All habits, alarms, bills, and reminders reside strictly within your device's memory.</li>
-                    <li><strong>No Account Sign-Up:</strong> You are not required to create profiles, enter emails, verify phone numbers, or hook up social network credentials to use the App.</li>
-                    <li><strong>No Trackers or Analytics:</strong> The App does not contain third-party tracking scripts, advertiser tools, or usage-analytics kits. Your app behavior and usage frequencies remain invisible.</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>2. Local Device Storage</h2>
-                <p>Any items you input into NeverMiss are saved locally in a sandboxed, private SQL database on your device (implemented via Android's native Room library):</p>
-                <ul>
-                    <li><strong>Alarms:</strong> Time configurations, repeat flags, and sound labels.</li>
-                    <li><strong>Reminders & Tasks:</strong> Schedules, notes, flags, priorities, and check states.</li>
-                    <li><strong>Bills & Budgets:</strong> Transaction names, billing frequencies, and dates.</li>
-                </ul>
-                <p>This database is secure and locked from other apps. Uninstalling the app permanently purges this local database unless backed up using standard system-wide Google Account backups.</p>
-            </section>
-
-            <section>
-                <h2>3. Required Device Permissions</h2>
-                <p>To deliver precise features, NeverMiss requests the following permissions from Android. We only use them to execute features locally on your device:</p>
-
-                <div class="permission-card">
-                    <div class="permission-title">A. Exact Alarm Scheduling</div>
-                    <p>Allows the App to trigger reminders at the exact millisecond configured by the user, overcoming standard background idle sleep delays.</p>
-                </div>
-
-                <div class="permission-card">
-                    <div class="permission-title">B. Full-Screen Intents</div>
-                    <p>Enables displaying the full wakeup call trigger screen even when your device is completely locked, allowing quick snoozes and dismissals.</p>
-                </div>
-
-                <div class="permission-card">
-                    <div class="permission-title">C. Post Notifications</div>
-                    <p>Allows adding alerts, progress status, and task reminder banners to your device’s notification tray.</p>
-                </div>
-
-                <div class="permission-card">
-                    <div class="permission-title">D. Receive Boot Completed</div>
-                    <p>Enables the App to restore and re-schedule all your active alarms and reminders automatically when your phone is turned back on or restarted.</p>
-                </div>
-            </section>
-
-            <section>
-                <h2>4. Children's Privacy</h2>
-                <p>Since the App collects absolutely no data, it is fully compliant with the Children's Online Privacy Protection Act (COPPA) and the General Data Protection Regulation (GDPR), and is safe to be used by all age brackets.</p>
-            </section>
-
-            <section>
-                <h2>5. Contact & Support</h2>
-                <p>For support, bugs, or general feedback, feel free to reach out to the developer:</p>
-                
-                <div class="contact-grid">
-                    <div class="contact-card">
-                        <div class="contact-label">Email Support</div>
-                        <div class="contact-value">
-                            <a href="mailto:medicobhai@gmail.com">medicobhai@gmail.com</a><br>
-                            <a href="mailto:riturajprince@outlook.com">riturajprince@outlook.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-label">Instagram Contacts</div>
-                        <div class="contact-value">
-                            <a href="https://www.instagram.com/theriturajprince" target="_blank">@theriturajprince</a><br>
-                            <a href="https://www.instagram.com/riturajprinceofficial" target="_blank">@riturajprinceofficial</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <section><h2>What is new in NeverMiss 2.0</h2><p>New in 2.0: study timers, Pomodoro breaks and count-up sessions; optional strict commitments; app and supported feed blocking; daily limits and independent one-time or recurring app schedules; study tasks, a weekly timetable and local insights.</p><p>Custom study time, offline soundscapes, fullscreen lessons, app schedules, optional DND and clearer timer/reminder alerts. Read below for data handling and system limitations.</p></section>
+            <section><h2>1. Your data stays on your phone</h2><p>Your alarms, reminders, bills, settings and Focus records are saved on your device. They are not uploaded to a NeverMiss server. You do not need an account, and this version has no ads or developer analytics.</p></section>
+            <section><h2>2. What Focus checks</h2><p>With your permission, Focus checks which app is open and parts of supported app screens to block distractions. It can also check a website address. These checks happen on your phone; NeverMiss does not save screen content or a browsing history. App names, time spent in apps, study results and links you choose to save are kept locally for your rules and reports. App schedules and daily limits can work even when you are not studying.</p></section>
+            <section><h2>3. When the internet is used</h2><p>If you open a website or YouTube lesson, that service receives your request and network address and may save cookies or website data. YouTube is also contacted when checking approved channels. These services have their own privacy rules. The included nature sounds and other audio play offline.</p></section>
+            <section><h2>4. Optional website filtering</h2><p>If you enable DNS filtering, allowed website-name requests are sent to Cloudflare at 1.1.1.1. Cloudflare can see those names and your network address. NeverMiss does not keep a DNS history. This feature is not an encrypted privacy VPN and cannot block every kind of connection. It may replace another VPN on your phone.</p></section>
+            <section><h2>5. You control permissions</h2><p>Permissions are used to ring alarms, show alerts, block selected apps, scan QR challenges and silence notifications during study. We do not request microphone or contacts access. You can turn permissions off in Android settings. Strict mode is optional and has an emergency exit. Android still controls alarm delivery, DND exceptions and calls.</p></section>
+            <section><h2>6. Delete or back up your data</h2><p>You can delete saved items and clear Focus reports in the app. App-use reports default to 30 days and are cleaned up when reports are saved. Deleting reports does not reset active limits. Clearing app storage or uninstalling removes local data. Copies you exported or backed up remain until you delete them separately. Android backups or a cloud folder you choose may store copies outside your phone. Exported JSON files are not encrypted; keep them somewhere private. Not every Focus setting is included in backups; independent app schedules stay on this device.</p></section>
+            <section><h2>7. Questions</h2><p>Email medicobhai@gmail.com or riturajprince@outlook.com. Your email service handles that message. Websites and YouTube have their own age requirements. We will update this policy when data handling changes.</p></section>
+            <section><h2>External privacy information</h2><p><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google / YouTube</a> &middot; <a href="https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/" rel="noopener noreferrer">Cloudflare public DNS</a></p></section>
         </main>
 
         <footer>
